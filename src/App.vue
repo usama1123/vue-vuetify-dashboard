@@ -39,7 +39,7 @@
             <v-list-item-title>{{list.text}}</v-list-item-title>
           </v-list-item-content>
         </v-list-item-title>
-      </v-list> -->
+      </v-list> Hello There .-->
       </v-navigation-drawer>
 
      
