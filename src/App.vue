@@ -1,55 +1,11 @@
 <template>
-  <v-app>
-    <v-app-bar app color="primary" dark>
+  <v-app class="grey">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <Navbar />
+    <!-- <v-app-bar app>
      
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-     
-      <v-navigation-drawer
-      app
-      absolute
-      temporary
-      src="https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg"
-      bottom
-      v-model="drawer"
-      height="885px"
-      >
-      
-      <v-list-item>
-        <v-list-item-content>
-
-          <v-avatar>
-            <img src="https://cdn.vuetifyjs.com/images/john.jpg"
-        alt="john">
-        
-          </v-avatar>
-        </v-list-item-content>
-      </v-list-item>
-      <v-divider></v-divider>
-      <v-list nav>
-        <!-- <v-list-item v-for="item in links" :key="item.text" link> -->
-          <v-list-item link>
-          <v-list-item-icon><v-icon>mdi-account</v-icon></v-list-item-icon>
-          <v-list-item-content>Dashboard</v-list-item-content>
-        </v-list-item>
-        <v-list-item link>
-          <v-list-item-icon><v-icon>mdi-image</v-icon></v-list-item-icon>
-          <v-list-item-content>Sample</v-list-item-content>
-        </v-list-item>
-      </v-list>
-      <!-- <v-list>
-        <v-list-item-title v-for="link in links" :key="link.text">
-          <v-list-item-action>
-            <v-icon class="white--text">{{list.icon}}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>{{list.text}}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item-title>
-      </v-list> Hello There .-->
-      </v-navigation-drawer>
-
-     
-    </v-app-bar>
+      <Navbar />
+    </v-app-bar> -->
 
     <v-main>
       <router-view />
@@ -58,16 +14,21 @@
 </template>
 
 <script>
+import Navbar from './components/Navbar.vue';
+
 export default {
   name: "App",
+  components: { Navbar } ,
 
   data: () => ({
-    drawer:false,
-    group:null,
-    links:[
-      {icon:'mdi-account', text:'Dashboard', route:'/' },
-      {icon:'mdi-image',text:'About',route:'/About'}
-    ]
+    
+    // drawer:f
+    // Navigation_draweralse,
+    // group:null,
+    // links:[
+    //   {icon:'mdi-account', text:'Dashboard', route:'/' },
+    //   {icon:'mdi-image',text:'About',route:'/About'}
+    // ]
     //
   }),
   // watch:{
