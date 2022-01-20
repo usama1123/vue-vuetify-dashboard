@@ -29,57 +29,27 @@
         </v-list-item-content>
       </v-list-item>
       <v-divider></v-divider>
-      <v-list nav>
-        <!-- <v-list-item v-for="item in links" :key="item.text" link> -->
+      <v-list nav class="white--text" id="lis">
+        
           <v-list-item link v-for="item in source" :key="item.text">
           <v-list-item-icon><v-icon>{{item.icon}}</v-icon></v-list-item-icon>
           <v-list-item-content>{{item.text}}</v-list-item-content>
           
         </v-list-item>
-        <v-list-group :value="true" prepend-icon="mdi-account circle">
+        <v-list-group :value="false" no-action prepend-icon="mdi-account circle">
             <template v-slot:activator>
           <v-list-item-title>Users</v-list-item-title>
         </template>
+        <v-list-item v-for="item in admins" :key="item.title" link>
+          <v-list-item-icon>{{item.icon}}</v-list-item-icon>
+          <v-list-item-title>{{item.title}}</v-list-item-title>
+        </v-list-item>
 
-        <v-list-group
-          :value="true"
-          no-action
-          sub-group
-        >
-          <template v-slot:activator>
-            <v-list-item-content>
-              <v-list-item-title>Admin</v-list-item-title>
-            </v-list-item-content>
-          </template>
-
-          <v-list-item
-            v-for="([title, icon], i) in admins"
-            :key="i"
-            link
-          >
-            <v-list-item-title v-text="title"></v-list-item-title>
-
-            <v-list-item-icon>
-              <v-icon v-text="icon"></v-icon>
-            </v-list-item-icon>
-          </v-list-item>
-          </v-list-group>
+       
         </v-list-group>
-        <!-- <v-list-item link>
-          <v-list-item-icon><v-icon>mdi-image</v-icon></v-list-item-icon>
-          <v-list-item-content>Sample</v-list-item-content>
-        </v-list-item> -->
+      
       </v-list>
-      <!-- <v-list>
-        <v-list-item-title v-for="link in links" :key="link.text">
-          <v-list-item-action>
-            <v-icon class="white--text">{{list.icon}}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>{{list.text}}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item-title>
-      </v-list> Hello There .-->
+     
       </v-navigation-drawer>
 </div>
 </template>
@@ -93,16 +63,16 @@ export default {
                 {icon:'mdi-home',text:'Dashboard',route:'/'},
                 {icon:'mdi-email',text:'Projects',route:'/'},
                 {icon:'mdi-folder',text:'Teams',route:'/'},
-                {icon:'mdi-favorite',text:'Dashboard',route:'/'},
+                {icon:'fa fa-tv',text:'Dashboard',route:'/'},
                 {icon:'mdi-license',text:'Dashboard',route:'/'},
                 {icon:'mdi-web',text:'Dashboard',route:'/'},
-                {icon:'mdi-account',text:'Dashboard',route:'/'},
-                {icon:'mdi-account',text:'Dashboard',route:'/'},
+                {icon:'mdi-help',text:'Dashboard',route:'/'},
+                {icon:'fa fa-amazon',text:'Dashboard',route:'/'},
                 {icon:'mdi-account',text:'Dashboard',route:'/'},
             ],
             admins: [
-        ['Management', 'mdi-account-multiple-outline'],
-        ['Settings', 'mdi-cog-outline'],
+        {title:'Management', icon:'mdi-account'},
+        {title:'Settings', icon:'mdi-cog-outline'}
       ],
             }
         
@@ -112,5 +82,7 @@ export default {
 </script>
 
 <style>
-
+/* #lis{
+  
+} */
 </style>

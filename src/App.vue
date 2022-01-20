@@ -1,7 +1,8 @@
 <template>
-  <v-app class="grey">
+  <v-app class="grey" :style="{background:$vuetify.theme.themes.dark.background}">
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
     <Navbar />
+    <RightSideBar />
     <!-- <v-app-bar app>
      
       <Navbar />
@@ -15,10 +16,11 @@
 
 <script>
 import Navbar from './components/Navbar.vue';
-
+import RightSideBar from './components/RightSideBar.vue';
 export default {
   name: "App",
-  components: { Navbar } ,
+  components: { Navbar,
+  RightSideBar } ,
 
   data: () => ({
     
