@@ -5,9 +5,9 @@
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>Dashboard</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon class="white"><v-icon >mdi-magnify</v-icon></v-btn>
+      <!-- <v-btn icon class="white"><v-icon >mdi-magnify</v-icon></v-btn>
        <v-btn icon class="white"><v-icon>mdi-heart</v-icon></v-btn>
-        <v-btn icon class="white"><v-icon>mdi-account</v-icon></v-btn>
+        <v-btn icon class="white"><v-icon>mdi-account</v-icon></v-btn> -->
   </v-toolbar>
 <v-navigation-drawer
       app

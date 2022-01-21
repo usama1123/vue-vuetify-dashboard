@@ -38,12 +38,104 @@
                           <template>
                               <v-list-item-content>
                                   <v-list-item-title v-html="item.title" class="white--text"></v-list-item-title>
+                                  <v-list-item-subtitle v-text="item.time" class="white--grey"></v-list-item-subtitle>
+                                  <v-list-item-subtitle v-text="item.subtitle" class="white--text"></v-list-item-subtitle>
                               </v-list-item-content>
                           </template>
                   </v-list-item>
               </template>
           </v-list-item-group>
       </v-list>
+      <v-row>
+          <v-col cols="12" sm="6">
+              <v-card class="d-flex align-center wl-4" height="60px" width="120px" color="#21212B" link>
+                  <v-row>
+                      <v-col cols="12" sm="12">
+                          <v-list-item two-line class="text-center">
+                              <v-list-item-content>
+                                  <v-list-item-title class="white--text">550</v-list-item-title>
+                                  <v-list-item-subtitle class="grey--text caption mt-2">Total Projects</v-list-item-subtitle>
+                              </v-list-item-content>
+                          </v-list-item>
+                      </v-col>
+                  </v-row>
+              </v-card>
+          </v-col>
+          <v-col cols="12" sm="6">
+              <v-card class="d-flex align-center wl-4" height="60px" width="120px" color="red" link>
+                  <v-row>
+                      <v-col cols="12" sm="12">
+                          <v-list-item two-line class="text-center">
+                              <v-list-item-content>
+                                  <v-list-item-title class="white--text">550</v-list-item-title>
+                                  <v-list-item-subtitle class="grey--text caption mt-2">Total Projects</v-list-item-subtitle>
+                              </v-list-item-content>
+                          </v-list-item>
+                      </v-col>
+                  </v-row>
+              </v-card>
+          </v-col>
+      </v-row>
+      <v-row>
+          <v-col cols="12" sm="6">
+              <v-card class="d-flex align-center wl-4" height="60px" width="120px" color="#21212B" link>
+                  <v-row>
+                      <v-col cols="12" sm="12">
+                          <v-list-item two-line class="text-center">
+                              <v-list-item-content>
+                                  <v-list-item-title class="white--text">239</v-list-item-title>
+                                  <v-list-item-subtitle class="grey--text caption mt-2">Verified Users</v-list-item-subtitle>
+                              </v-list-item-content>
+                          </v-list-item>
+                      </v-col>
+                  </v-row>
+              </v-card>
+          </v-col>
+          <v-col cols="12" sm="6">
+              <v-card class="d-flex align-center wl-4" height="60px" width="120px" color="#21212B" link>
+                  <v-row>
+                      <v-col cols="12" sm="12">
+                          <v-list-item two-line class="text-center">
+                              <v-list-item-content>
+                                  <v-list-item-title class="white--text">565</v-list-item-title>
+                                  <v-list-item-subtitle class="grey--text caption mt-2">Apps Developed</v-list-item-subtitle>
+                              </v-list-item-content>
+                          </v-list-item>
+                      </v-col>
+                  </v-row>
+              </v-card>
+          </v-col>
+      </v-row>
+      <v-row>
+          <v-col cols="12" sm="6">
+              <v-card class="d-flex align-center wl-4" height="60px" width="120px" color="#21212B" link>
+                  <v-row>
+                      <v-col cols="12" sm="12">
+                          <v-list-item two-line class="text-center">
+                              <v-list-item-content>
+                                  <v-list-item-title class="white--text">320</v-list-item-title>
+                                  <v-list-item-subtitle class="grey--text caption mt-2">Total Users</v-list-item-subtitle>
+                              </v-list-item-content>
+                          </v-list-item>
+                      </v-col>
+                  </v-row>
+              </v-card>
+          </v-col>
+          <v-col cols="12" sm="6">
+              <v-card class="d-flex align-center wl-4" height="60px" width="120px" color="#21212B" link>
+                  <v-row>
+                      <v-col cols="12" sm="12">
+                          <v-list-item two-line class="text-center">
+                              <v-list-item-content>
+                                  <v-list-item-title class="white--text">1320</v-list-item-title>
+                                  <v-list-item-subtitle class="grey--text caption mt-2">Total Investors</v-list-item-subtitle>
+                              </v-list-item-content>
+                          </v-list-item>
+                      </v-col>
+                  </v-row>
+              </v-card>
+          </v-col>
+      </v-row>
   </v-navigation-drawer>
 </template>
 
