@@ -61,7 +61,7 @@ export default {
             drawer:false,
             source:[
                 {icon:'mdi-home',text:'Dashboard',route:'/'},
-                {icon:'mdi-email',text:'Projects',route:'/'},
+                {icon:'mdi-email',text:'Projects',route:'/About'},
                 {icon:'mdi-folder',text:'Teams',route:'/'},
                 {icon:'fa fa-tv',text:'Dashboard',route:'/'},
                 {icon:'mdi-license',text:'Dashboard',route:'/'},

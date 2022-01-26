@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer app right color="#14141C">
+  <v-navigation-drawer app right color="#14141C" bottom>
       <v-toolbar color="rbga(0,0,0,0)">
           <v-icon color="#7C7C7F" class="mr-4">fa fa-search</v-icon>
           <v-badge borded overlap color="red" dot class="mr-8">
